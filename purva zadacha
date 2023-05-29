@@ -1,0 +1,27 @@
+using MathNet.Numerics;
+
+namespace ConsoleApp36
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("molq vuvedete 'm'");
+            var n = int.Parse(Console.ReadLine());
+            var permutationN = Combinatorics.Permutations(n);
+
+            Console.WriteLine("molq vuvedete 'k'");
+            var k = int.Parse(Console.ReadLine());
+            var permutationK = Combinatorics.Permutations(n);
+
+            var Combination = Combinatorics.Combinations(n, k);
+            var Variation = Combinatorics.Variations(n, k);
+
+            Console.WriteLine();
+            Console.WriteLine("Permutaciq na n:{0} {1}{2}" permutationN);
+            Console.WriteLine("Permutaciq na n:{0} {1}{2}" permutationN);
+            Console.WriteLine("Permutaciq na n:{0} {1}{2}" permutationN);
+            Console.WriteLine("Permutaciq na n:{0} {1}{2}" permutationN);
+        }
+    }
+}
